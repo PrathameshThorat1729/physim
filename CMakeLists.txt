@@ -10,7 +10,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 
-if(EXISTS external/SFML)
+if(EXISTS ${PROJECT_SOURCE_DIR}/external/SFML)
   add_subdirectory(external/SFML)
 else()
   message(FATAL_ERROR "Error: Git Submodule not upadted")
